@@ -1,0 +1,17 @@
+discord.py>=2.3.0
+openai>=1.0.0
+python-dotenv>=1.0.0
+pytz>=2023.3
+tzlocal>=5.0
+ddgs>=9.0.0
+aiohttp>=3.9.0
+pillow>=10.0.0
+google-genai>=2.0.0
+yt-dlp>=2024.1.0
+
+# Optional, install only for the providers / features you want:
+#   pip install anthropic              # LLM_PROVIDER=anthropic
+#   pip install easyocr                # OCR fallback for images (Gemini vision is preferred)
+
+# IMPORTANT: do NOT install `google-generativeai` — that package was
+# deprecated November 30, 2025. Use `google-genai` (this one) instead.
