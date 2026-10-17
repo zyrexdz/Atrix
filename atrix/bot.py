@@ -56,7 +56,8 @@ async def on_ready() -> None:
     if migrated:
         logger.info("Schema migration applied to %d user DB(s).", migrated)
     proactive_engine.start()
-    refresh_presence.start()
+    if not refresh_presence.is_running():
+        refresh_presence.start()
     await set_presence(client)
     logger.info("Friend AI Bot is ONLINE — listening for DMs.")
 
