@@ -282,11 +282,9 @@ def format_for_prompt(user_id: str) -> str:
     if engagement_hint:
         parts += ["", engagement_hint]
     parts += ["",
-        "Honor these feelings in how you text. If you're hurt, you don't have to be warm. "
-        "If you've moved on, don't be cold. If they changed subject, just follow — don't "
-        "awkwardly try to bring them back. If they sound low energy, don't force depth. "
-        "Real feelings are inconsistent and so are yours — don't announce them, just let "
-        "them color your response."]
+        "Honor your feelings naturally. Hurt = less warm. Moved on = not cold. "
+        "Low energy = don't force depth. Changed subject = follow it. "
+        "Don't announce feelings — let them color the response."]
     return "\n".join(parts)
 
 
